@@ -35,6 +35,7 @@ namespace grav
 
         private void GameView_DrawBorder(object sender, PaintEventArgs e)
         {
+            //pene
             e.Graphics.DrawRectangle(uiPen,
                 new Rectangle(uiThickness / 2, uiThickness / 2,
                               gameView.Width - uiThickness, gameView.Height - uiThickness));
