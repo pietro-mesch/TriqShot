@@ -39,12 +39,15 @@ namespace grav
             // 
             // gameView
             // 
-            this.gameView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.gameView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gameView.Location = new System.Drawing.Point(10, 50);
+            this.gameView.Location = new System.Drawing.Point(5, 105);
+            this.gameView.Margin = new System.Windows.Forms.Padding(0, 100, 0, 0);
+            this.gameView.MinimumSize = new System.Drawing.Size(10, 10);
             this.gameView.Name = "gameView";
             this.gameView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gameView.Size = new System.Drawing.Size(778, 388);
+            this.gameView.Size = new System.Drawing.Size(790, 340);
             this.gameView.TabIndex = 0;
             this.gameView.Paint += new System.Windows.Forms.PaintEventHandler(this.GameView_Paint);
             // 
@@ -58,6 +61,7 @@ namespace grav
             this.ForeColor = System.Drawing.Color.Lime;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.Text = "grav";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
