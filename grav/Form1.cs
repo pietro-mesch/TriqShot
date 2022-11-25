@@ -21,7 +21,7 @@ namespace grav
         int uiThickness = 2;
 
         Pen uiPen;
-
+        
         private void GameView_Paint(object sender, PaintEventArgs e)
         {
             uiPen = new Pen(uiColor, uiThickness);
