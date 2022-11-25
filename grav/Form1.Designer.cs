@@ -6,18 +6,7 @@ namespace grav
     partial class Form1
     {
 
-        private int n = 5;
-
-        private void Form1_Paint(object sender, PaintEventArgs e)
-        {
-            Color black = Color.FromArgb(255, 0, 0, 0);
-            Pen greenPen = new Pen(Color.LimeGreen);
-            for (int i = 0; i < n; i++)
-            {
-                e.Graphics.DrawEllipse(greenPen,new Rectangle(new Point(100 + 100 * i,100),new Size(50,50)));
-            }
-
-        }
+        private int n = 10;
 
         /// <summary>
         /// Required designer variable.
@@ -45,7 +34,19 @@ namespace grav
         /// </summary>
         private void InitializeComponent()
         {
+            this.gameView = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // gameView
+            // 
+            this.gameView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gameView.Location = new System.Drawing.Point(10, 50);
+            this.gameView.Name = "gameView";
+            this.gameView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gameView.Size = new System.Drawing.Size(778, 388);
+            this.gameView.TabIndex = 0;
+            this.gameView.Paint += new System.Windows.Forms.PaintEventHandler(this.GameView_Paint);
             // 
             // Form1
             // 
@@ -53,17 +54,19 @@ namespace grav
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gameView);
             this.ForeColor = System.Drawing.Color.Lime;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "grav";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Panel gameView;
     }
 }
 
