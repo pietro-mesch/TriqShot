@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A2C0139D-9761-4192-AF87-5EE1C2A7BC70}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>grav</RootNamespace>
-    <AssemblyName>grav</AssemblyName>
+    <RootNamespace>TriqShot</RootNamespace>
+    <AssemblyName>TriqShot</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
